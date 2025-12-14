@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AutoGLM</string>
+    <string name="accessibility_service_description">AutoGLM无障碍服务，用于自动化手机操作</string>
+    <string name="api_key_hint">请输入API密钥</string>
+    <string name="save_api_key">保存</string>
+    <string name="task_hint">请输入任务描述</string>
+    <string name="start_task">开始任务</string>
+</resources>

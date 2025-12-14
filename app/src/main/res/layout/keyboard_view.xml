@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+<!-- 已删除顶部隐藏按钮占位 -->
+
+    <!-- 拼音显示区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/pinyin_display"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- 候选词区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="4dp">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:id="@+id/candidate_container"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- 候选词分页控制按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/page_up_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:text="上页"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:background="@drawable/key_background"
+                android:textColor="#CCCCCC" />
+
+            <TextView
+                android:id="@+id/page_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:text="1/1"
+                android:textSize="12sp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/page_down_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:text="下页"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:background="@drawable/key_background"
+                android:textColor="#CCCCCC" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 主键盘区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- 第一行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/key_q"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="q"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_w"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="w"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_e"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="e"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_r"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="r"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_t"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="t"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333"/>
+            <Button
+                android:id="@+id/key_y"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="y"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_u"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="u"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_i"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="i"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_o"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="o"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_p"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="p"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <!-- 第二行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <Button
+                android:id="@+id/key_a"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="a"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_s"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="s"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_d"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="d"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_f"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="f"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_g"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="g"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_h"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="h"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_j"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="j"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_k"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="k"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_l"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="l"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+        </LinearLayout>
+
+        <!-- 第三行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/key_z"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="z"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_x"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="x"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_c"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="c"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_v"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="v"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_b"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="b"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_n"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="n"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_m"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="m"
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_backspace"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:layout_margin="2dp"
+                android:text="⌫"
+                android:textSize="18sp"
+                android:background="@drawable/key_background_delete"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- 数字键盘行（默认隐藏） -->
+        <LinearLayout
+            android:id="@+id/numeric_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="4dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key_1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <Button
+                    android:id="@+id/key_2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="2"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <Button
+                    android:id="@+id/key_3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="3"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key_4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="4"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <Button
+                    android:id="@+id/key_5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="5"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <Button
+                    android:id="@+id/key_6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="6"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/key_7"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="7"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <Button
+                    android:id="@+id/key_8"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="8"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <Button
+                    android:id="@+id/key_9"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="9"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <!-- Zero key -->
+                <Button
+                    android:id="@+id/key_0"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+                <!-- Hide keyboard button -->
+                <Button
+                    android:id="@+id/key_hide"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:text="隐藏"
+                    android:textSize="18sp"
+                    android:background="@drawable/key_background"
+                    android:textColor="#333333" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 第四行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
+            <Button
+                android:id="@+id/key_segment"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:layout_margin="2dp"
+                android:text="分词"
+                android:textSize="16sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+
+            <!-- 数字键盘切换按钮 -->
+            <Button
+                android:id="@+id/key_toggle_num"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:layout_margin="2dp"
+                android:text="数字"
+                android:textSize="16sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+
+            <Button
+                android:id="@+id/key_space"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2.5"
+                android:layout_margin="2dp"
+                android:text="空格"
+                android:textSize="16sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_comma"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text=","
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_period"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_margin="2dp"
+                android:text="."
+                android:textSize="18sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_switch"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1.5"
+                android:layout_margin="2dp"
+                android:text="中/英"
+                android:textSize="16sp"
+                android:background="@drawable/key_background"
+                android:textColor="#333333" />
+            <Button
+                android:id="@+id/key_enter"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:layout_margin="2dp"
+                android:text="回车"
+                android:textSize="16sp"
+                android:background="@drawable/key_background_enter"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

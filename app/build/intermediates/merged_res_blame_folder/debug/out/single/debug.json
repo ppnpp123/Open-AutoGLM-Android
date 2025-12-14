@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "com.aipaly.autoglm.app-merged_res-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.aipaly.autoglm.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\mipmap-anydpi-v26_image.png.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\mipmap-anydpi-v26\\image.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\layout_keyboard_view.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\layout\\keyboard_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\xml_accessibility_service_config.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\xml\\accessibility_service_config.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\drawable_key_background_enter.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\drawable\\key_background_enter.xml"
+    },
+    {
+        "merged": "com.aipaly.autoglm.app-merged_res-4:/mipmap-xxhdpi_image.png.flat",
+        "source": "com.aipaly.autoglm.app-main-6:/mipmap-xxhdpi/image.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\drawable_key_background.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\drawable\\key_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\drawable_key_background_delete.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\drawable\\key_background_delete.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-merged_res-4:\\xml_method.xml.flat",
+        "source": "C:\\Users\\Administrator\\.gradle\\daemon\\7.6.5\\com.aipaly.autoglm.app-main-6:\\xml\\method.xml"
+    }
+]

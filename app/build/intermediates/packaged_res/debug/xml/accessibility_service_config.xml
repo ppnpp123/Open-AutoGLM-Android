@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFlags="flagDefault|flagRetrieveInteractiveWindows|flagRequestAccessibilityButton|flagRequestEnhancedWebAccessibility|flagInputMethodEditor"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:canRetrieveWindowContent="true"
+    android:canRequestFilterKeyEvents="true"
+    android:canRequestTouchExplorationMode="false"
+    android:canPerformGestures="true"
+    android:canTakeScreenshot="true"
+    tools:targetApi="r"
+    android:settingsActivity="com.aipaly.autoglm.MainActivity"
+    android:description="@string/accessibility_service_description" />

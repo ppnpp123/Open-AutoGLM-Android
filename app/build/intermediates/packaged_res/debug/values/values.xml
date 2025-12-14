@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <string name="accessibility_service_description">AutoGLM无障碍服务，用于自动化手机操作</string>
+    <string name="api_key_hint">请输入API密钥</string>
+    <string name="app_name">AutoGLM</string>
+    <string name="save_api_key">保存</string>
+    <string name="start_task">开始任务</string>
+    <string name="task_hint">请输入任务描述</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
